@@ -29,6 +29,17 @@ form.addEventListener(`submit`, function (event) {
 
     console.log(`Prezzo totale ${prezzototale}`);
 
+    const carrozza = Math.floor(Math.random() * 10) + 1;
+    const codiceCP = Math.floor(Math.random() * 10000)
+    
+    document.getElementById("outNome").textContent = nome;
+    document.getElementById("offerta").textContent;
+    document.getElementById("carrozza").textContent = carrozza;
+    document.getElementById("codice").textContent = codiceCP;
+    document.getElementById("costo").textContent = prezzototale + "€";
+
+
+
     //prendo il DOM del div e stampo il risultato in HTML
     const risultato = document.getElementById("risultato");
     risultato.innerHTML = `
@@ -36,5 +47,6 @@ form.addEventListener(`submit`, function (event) {
     <p>Vuoi percorrere ${km} km</p>
     <p>hai un età di ${eta}</p>
     <p>per un totale di ${prezzototale} €</p>`
+
 
 })
