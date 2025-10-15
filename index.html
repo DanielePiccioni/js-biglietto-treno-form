@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-<h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
 
-<input type="number" id="km" placeholder="km da percorrere">
-<input type="number" id="eta" placeholder="fascia di età">
-<button id="calcola">check</button>
-    <script src="./assets/js/main.js"></script>
-</body>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <form action id="form">
+            <label for="km">km da percorrere</label>
+            <input type="number" id="km" placeholder="km da percorrere">
+
+            <label for="">fascia di età</label>
+            <input type="number" id="eta" placeholder="fascia di età">
+            <button id="calcola" type="submit">check</button>
+        </form>
+
+        <div id="risultato"></div>
+
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>
