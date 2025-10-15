@@ -14,16 +14,16 @@ form.addEventListener(`submit`, function (event) {
     event.preventDefault();
     //leggi i valori inseriti e li converte da string a numeri
     const km = parseInt(kmEL.value)
-    const eta = parseInt(etaEL.value)
+    const eta = etaEL.value
     const nome = nomeEL.value;
 
     //calcolo degli sconti per eventuali differenze di età
     const prezzokm = 0.21;
     let prezzototale = km * prezzokm;
 
-    if (eta < 18) {
+    if (eta === "minorenne") {
         prezzototale *= 0.8;
-    } else if (eta >= 65) {
+    } else if (eta === "over65") {
         prezzototale *= 0.6;
     }
 
