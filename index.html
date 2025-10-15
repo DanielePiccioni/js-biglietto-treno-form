@@ -15,7 +15,7 @@
             <label for="km">km da percorrere</label>
             <input type="number" id="km" placeholder="km da percorrere">
 
-            <label for="">fascia di età</label>
+            <label for>fascia di età</label>
             <select name="eta" id="eta">
                 <option value="Minorenne">minorenne</option>
                 <option value="Maggiorenne">maggiorenne</option>
@@ -25,7 +25,29 @@
             <button id="calcola" type="submit">check</button>
         </form>
 
-    
+        <section id="biglietto">
+            <h2>IL TUO BIGLIETTO</h2>
+            <div>
+                <h3>DETTAGLIO PASSEGGERI</h3>
+                <table>
+                    <tr>
+                        <th>NOME PASSEGGERO</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+                    <tr>
+                        <td id="outNome"></td>
+                        <td id="offerta">Biglietto Standard</td>
+                        <td id="carrozza"></td>
+                        <td id="codice"></td>
+                        <td id="costo"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
         <div id="risultato"></div>
 
         <script src="./assets/js/main.js"></script>
