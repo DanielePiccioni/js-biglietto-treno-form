@@ -21,9 +21,9 @@ form.addEventListener(`submit`, function (event) {
     const prezzokm = 0.21;
     let prezzototale = km * prezzokm;
 
-    if (eta === "minorenne") {
+    if (eta === "Minorenne") {
         prezzototale *= 0.8;
-    } else if (eta === "over65") {
+    } else if (eta === "Over65") {
         prezzototale *= 0.6;
     }
 
